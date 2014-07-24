@@ -27,6 +27,7 @@ function getScroll(direction) {
 }
 
 /* usage:
+== Events:
 
 $( document ).on('scroll_x_only', function() {
     console.log("scrolling X only!");
@@ -35,5 +36,13 @@ $( document ).on('scroll_x_only', function() {
 $( document ).on('scroll_y_only', function() {
     console.log("scrolling y only!");
 });
+
+$( document ).on('scroll_y_and_x', function() {
+    console.log("scrolling y and x!");
+});
+
+== disable scroling:
+scroll.y.enabled = false;
+scroll.x.enabled = false;
 
 */
