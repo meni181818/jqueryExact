@@ -1,7 +1,7 @@
 var scroll = {y: {last_pos: 0, update_pos: function() {this.last_pos = getScroll('y');}, enabled: true},
               x: {last_pos: 0, update_pos: function() {this.last_pos = getScroll('x');} , enabled: true}};
 
-$$( document ).scroll(function() {
+$( document ).scroll(function() {
     if(scroll.y.last_pos != getScroll('y') && scroll.x.last_pos == getScroll('x')) { // if only y scrolled
         $( document ).trigger( "scroll_y_only" );
         if(scroll.y.enabled == false) { // block the y scroll if set to enabled = false
