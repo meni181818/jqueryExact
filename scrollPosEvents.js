@@ -23,15 +23,12 @@ $( document ).scroll(function() {
         } else {
             scroll.y.update_pos();
         }
-        
         if(scroll.x.enabled == false) { // block the x scroll if set to enabled = false
            window.scrollTo(scroll.x.last_pos, null); 
         } else {
             scroll.x.update_pos();
         }
-
     }
-    
 });
 
 function getScroll(direction) {
