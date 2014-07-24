@@ -60,4 +60,6 @@ $( document ).on('scroll_y_and_x', function() {
 scroll.y.enabled = false;
 scroll.x.enabled = false;
 
+== TODO:
+pass params to events, like "Up", "down", "right", "left".
 */
