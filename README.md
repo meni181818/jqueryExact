@@ -1,4 +1,4 @@
-jqueryExactEvent
+jqueryExact
 ================
 
-Special and accurate Events For jquery
+Special and accurate things For jquery
